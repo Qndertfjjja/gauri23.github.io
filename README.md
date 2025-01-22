@@ -1,1 +1,2 @@
-#https://qndertfjjja.github.io/gauri23.github.io/
+# Gauri23 Portfolio Website
+https://qndertfjjja.github.io/gauri23.github.io/
