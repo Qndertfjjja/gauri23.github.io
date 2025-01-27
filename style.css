@@ -13,11 +13,11 @@
     overflow-x: hidden;
   }
   
-  body {
-    background: var(--bg-oxford-blue-2); 
-    color: var(--text-color);
-    /* color: var(--text-shadow-blue); */
   
+  body {
+    background: var(--bg-oxford-blue-2);
+    color: var(--text-color);
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
   
   :root {
@@ -257,6 +257,7 @@
    .home-image .home-img {
     max-width: max-content;
     margin-inline: auto;
+    
   } 
   
   
@@ -545,6 +546,7 @@
     background: var(--);
     background: var(--bg-oxford-blue);
     text-align: center;
+
   }
   
   #contact > div > p {
@@ -659,6 +661,8 @@
         font-size: 55%;
   
       }
+     
+
     }
     @media (max-width: 991px) {
       .header {
@@ -675,6 +679,7 @@
       }
       .contact {
         min-height: auto;
+        
       }
       .footer {
         padding: 2rem 3%;
@@ -703,7 +708,8 @@
       
       
       .home-img{
-        width: 55%;
+        width: 5%;
+        
         margin-left: 20%;
         margin-bottom: 100%;
         position: sticky;
@@ -727,6 +733,7 @@
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
+        padding-left: 20px;
       }
       #nav-menu.active {
         display: block;
@@ -740,7 +747,12 @@
         margin: 3rem 0;
       }
     .home {
-      flex-direction: column;
+      display: flex;
+      
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      
     }
   .home-content h3 {
     font-size: 2.6rem;
@@ -749,8 +761,8 @@
     font-size: 5rem;
   }
   .home-img {
-    width: 40vw;
-    margin-top: 1rem;
+    width: 30vw;
+    margin-top: 2rem;
   }
   .about {
     flex-direction: column-reverse;
@@ -849,3 +861,23 @@
       margin: 0 auto;
       display: none;
   }
+  /* Default height for smaller screens */
+.home-img {
+  height: auto; /* Allow the image to scale proportionally */
+  max-height: 380px; /* Set a default maximum height */
+  
+}
+
+
+/* For screens 1200px and wider */
+@media (min-width: 1200px) {
+  .home-img {
+    height: 380px;
+  }
+  
+}
+#contact{
+  padding-top: 30px;
+}
+
+  
